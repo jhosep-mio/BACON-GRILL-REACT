@@ -1,0 +1,289 @@
+@use "../variables";
+
+/*=======DESKTOP FIRST====*/
+//NAV
+@media (max-width: 1000px) {
+  //HEADER
+  .navBar {
+    width: 100%;
+    height: 84px;
+  }
+  .navTop {
+    height: 100%;
+
+    &__menu {
+      display: none;
+      &--inactive {
+        display: block;
+      }
+    }
+
+    &__img-nav {
+      height: 100%;
+      width: 80%;
+      margin: 25px 0px 0px 15px;
+      img {
+        width: 100%;
+        height: 60px;
+      }
+    }
+
+    &__contac {
+      display: none;
+    }
+
+    &__menu_mobile {
+      &--inactiv {
+        display: block;
+      }
+    }
+
+    &__cart-shop {
+      &--inactive {
+        display: block;
+      }
+    }
+
+    &__menu_mobile {
+      &--inactiv {
+        display: block;
+      }
+    }
+    &__cart-shop {
+      position: relative;
+    }
+
+    &__cont_prod {
+      width: 16px;
+      height: 16px;
+      background-color: #fab602;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      top: -10px;
+      left: 9px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__cartf {
+      font-size: 25px;
+    }
+
+    &__greater {
+      display: none;
+    }
+
+    &__logo_login {
+      padding-right: 30px;
+    }
+  }
+
+  .navDown {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-bot {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+
+    &__list {
+      margin: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 24px;
+      position: fixed;
+    }
+
+    &__list_items {
+      padding: 24px;
+    }
+
+    &__arrow {
+      display: grid;
+      grid-template-columns: auto max-content;
+      align-items: center;
+    }
+
+    &__arrow {
+      a {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    &__greater_faT {
+      font-size: 16px;
+    }
+
+    &__list {
+      width: 100%;
+    }
+
+    &__list_items {
+      width: 100%;
+    }
+
+    &__greater_faT {
+      display: block !important;
+    }
+
+    &__product-detail-close {
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        float: right;
+        width: 25px;
+        display: block;
+        margin-top: -10px;
+      }
+
+      img:hover {
+        cursor: pointer;
+        background: #fab602;
+      }
+    }
+
+    &__cart-shop {
+      &--on-active {
+        display: none;
+      }
+    }
+
+    &__product-detail-close {
+      &--inactiv {
+        display: block;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+
+      img {
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__cont_prod {
+      margin-left: 33px;
+    }
+  }
+  .on-active {
+    display: none;
+  }
+
+  .carousel-item {
+    height: 670px;
+  }
+
+  .Contenedor-home {
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  //HOMEE------------
+  .carousel-item {
+    height: 970px;
+  }
+  .Contenedor-home {
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+    &__img {
+      display: block;
+      margin: auto;
+    }
+
+    &__img_content {
+      height: 400px;
+    }
+    &__text_content {
+      height: 570px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  //HOMEE------------
+  .row{
+    align-items: flex-start !important;
+  }
+  .carousel-item {
+    height: 770px;
+  }
+  .Contenedor-home {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 1rem;
+    }
+    &__img {
+      display: block;
+      margin: auto;
+      height: 320px !important;
+    }
+
+    &__img_content {
+      height: 320px;
+    }
+    &__text_content {
+      height: 420px;
+    }
+
+    &__description {
+      font-size: 0.8rem;
+      font-weight: variables.$font-semi-bold;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .Contenedor-home {
+    &__buttons {
+      font-size: 0.7rem;
+    }
+    &__img {
+      height: 250px !important;
+    }
+    &__img_content {
+      height: 250px;
+    }
+    &__text_content {
+      height: 420px;
+    }
+  }
+  // .carousel-item {
+  //   height: 800px;
+  // }
+}
+
+// @media (max-width: 400px) {
+//   .Contenedor-home {
+//     &__buttons {
+//       font-size: 0.7rem;
+//     }
+//     &__text_content {
+//       height: 420px;
+//     }
+//   }
+//   .carousel-item {
+//     height: 1000px;
+//   }
+// }

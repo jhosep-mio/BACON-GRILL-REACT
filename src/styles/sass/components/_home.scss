@@ -1,0 +1,51 @@
+@use "../variables";
+
+/*=============== HOME ===============*/
+
+.Contenedor-home{
+    &__title {
+        font-size: 4rem;
+        font-weight: variables.$font-black;
+        line-height: 109%;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: variables.$font-semi-bold;
+        text-align: justify;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        font-weight: variables.$font-semi-bold;
+        font-size: 1rem;
+    }
+
+    &__img {
+        animation: floating 2s ease-in-out infinite;
+    }
+   
+}
+
+.row{
+    height: 100%;
+}
+
+.row img{
+    height: 400px;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 90vh;
+}
+
