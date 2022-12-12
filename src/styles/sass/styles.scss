@@ -1,7 +1,15 @@
+@use 'swiper/scss';
+@use 'swiper/scss/navigation';
+@use 'swiper/scss/pagination';
 @use "bootstrap/scss/bootstrap";
 @use './variables';
 @use './initial';
 @use './components/navBar';
 @use './components/home';
+@use './components//ofertas';
+@use './components//productos';
+
+
+@use './components/footer';
 @use './components/mediaQuery';
 

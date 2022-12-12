@@ -1,6 +1,8 @@
 import React from 'react'
 import { Header } from './Header'
 import {Outlet} from 'react-router-dom';
+import { Footer } from './Footer';
+import { Offer } from './Home/Offer';
 
 export const PublicLayout = () => {
   return (
@@ -10,6 +12,9 @@ export const PublicLayout = () => {
     
     {/* CONTENIDO PRINCIPAL */}
       <Outlet/>
+
+      <Footer/>
+
     </>
 
   )

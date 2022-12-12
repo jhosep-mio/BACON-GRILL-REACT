@@ -1,7 +1,12 @@
 @use "../variables";
 
 /*=============== HOME ===============*/
-
+.carousel-control-prev{
+    display: none;
+}
+.carousel-control-next-icon{
+    display: none;
+}
 .Contenedor-home{
     &__title {
         font-size: 4rem;
@@ -46,6 +51,6 @@
 
 .carousel-item{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 

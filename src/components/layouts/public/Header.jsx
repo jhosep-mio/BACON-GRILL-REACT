@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../../assets/NavBar/logo.png';
 import onlypanda from '../../../assets/NavBar/logo_onlypanda.png';
 import icon_close from '../../../assets/NavBar/icon_close.png';
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaWhatsapp, FaSistrix, FaShoppingCart, FaAngleDown, FaUser, FaGreaterThan } from 'react-icons/fa';
 import { useState } from 'react';
 
@@ -50,7 +51,7 @@ export const Header = () => {
                         </div>
 
                         <div className="navTop__container-buscar">
-                            <input type="text" placeholder="Buscar...." required />
+                            <input type="navTop__text" placeholder="Buscar...." required />
                             <div className="navTop__buscar-icono">
                                 <FaSistrix className='navTop__bb' />
                             </div>
@@ -76,14 +77,14 @@ export const Header = () => {
 
                         <li className="navbar-bot__list_items navbar-bot__list_items--products_detail">
                             <div className="navbar-bot__arrow">
-                                <a href="../php/index.php">HOME</a>
+                                <NavLink to="/home">HOME</NavLink>
                                 <FaGreaterThan className='navbar-bot__greater_faT' />
                             </div>
                         </li>
 
                         <li className="navbar-bot__list_items">
                             <div className="navbar-bot__arrow">
-                                <a href="../php/productos.php">PRODUCTOS</a>
+                                <NavLink to="/productos">PRODUCTOS</NavLink>
                                 <FaGreaterThan className='navbar-bot__greater_faT' />
                             </div>
                         </li>
